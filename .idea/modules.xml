@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Selenium.iml" filepath="$PROJECT_DIR$/.idea/Selenium.iml" />
+      <module fileurl="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/atf/.idea/atf.iml" filepath="$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/atf/.idea/atf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../selenium 3.9/.idea/selenium 3.9.iml" filepath="$PROJECT_DIR$/../selenium 3.9/.idea/selenium 3.9.iml" />
     </modules>
   </component>
 </project>
