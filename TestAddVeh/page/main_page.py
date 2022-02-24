@@ -1,6 +1,7 @@
 import time
 
 from atf.ui import *
+from inside.pages_inside.edo_controls.edo3dialog import Edo3Dialog
 
 
 class Milestone(Region):
