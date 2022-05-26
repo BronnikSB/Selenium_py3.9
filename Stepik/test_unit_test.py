@@ -48,14 +48,4 @@ class TestUnit(unittest.TestCase):
         # записываем в переменную welcome_text текст из элемента welcome_text_elt
         welcome_text = welcome_text_elt.text
         # находим элемент, содержащий текст
-
-        self.assertEqual("Congratulations! You have successfully registered!", welcome_text, "КУКУ")
-
-    @classmethod
-    def tearDownClass(cls):
-        time.sleep(2)
-        browser.quit()
-
-
-if __name__ == "__main__":
-    unittest.main()
+        assert "Congratulations! You have successfully registered!" == welcome_text, "Значения разные"

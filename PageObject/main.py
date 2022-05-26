@@ -1,19 +1,26 @@
 from atf.ui import *
 from inside.pages_inside.edo_controls.edo3dialog import Edo3Dialog
-# from inside.pages_inside.edo_controls.saby_page import MasterDetail
 from inside.pages_inside.edo_controls.saby_page import MasterDetail
+from atf.ui.controls_vdom.vdom_controls_popup_confirmation import ControlsPopupConfirmation
 
 
 class CreateMilestone(MasterDetail):
     menu_btn = ControlsButton(icon='icon-RoundPlus')
     document = Element(By.CSS_SELECTOR, '[template="PM/Milestones/dialog:Dialog"]')
     btn_milestone = ControlsListView()
+    document_mi = ControlsTreeGridView(By.CSS_SELECTOR, '.controls-Grid_support-ladder', 'Таблица вехи')
+    confirm_btn = ControlsPopupConfirmation()
 
     def create(self):
         self.add('Выпуск релиза')
 
     def open_save_milestone(self):
         self.search_and_open('Test 007')
+
+    def delete_mil(self):
+        self.search('Test 007')
+        self.document_mi.row(contains_text='Test 007').select_menu_actions('Удалить')
+        self.confirm_btn.select(button_text='Да')
 
 
 @templatename('PM/Milestones/dialog:Dialog')

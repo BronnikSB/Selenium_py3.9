@@ -9,5 +9,6 @@
     <orderEntry type="module" module-name="selenium 3.9" />
     <orderEntry type="module" module-name="atf" />
     <orderEntry type="module" module-name="inside" />
+    <orderEntry type="module" module-name="Stepik_Pytest" />
   </component>
 </module>
