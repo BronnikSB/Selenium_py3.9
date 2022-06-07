@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Selenium.iml" filepath="$PROJECT_DIR$/.idea/Selenium.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Stepik_Pytest/.idea/Stepik_Pytest.iml" filepath="$PROJECT_DIR$/../Stepik_Pytest/.idea/Stepik_Pytest.iml" />
-      <module fileurl="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/atf/.idea/atf.iml" filepath="$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/atf/.idea/atf.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Selenium/venv/Lib/site-packages/inside/.idea/inside.iml" filepath="$PROJECT_DIR$/../Selenium/venv/Lib/site-packages/inside/.idea/inside.iml" />
       <module fileurl="file://$PROJECT_DIR$/../selenium 3.9/.idea/selenium 3.9.iml" filepath="$PROJECT_DIR$/../selenium 3.9/.idea/selenium 3.9.iml" />
     </modules>
