@@ -5,14 +5,14 @@ from selenium.webdriver.chrome.options import Options
 
 # Добавляем параметр командной строки
 def pytest_addoption(parser):
-    parser.addoption('--languages', action='store', default='en', help='Choose language: ec or fr')
+    parser.addoption('--language', action='store', default='en', help='Choose language: ec or fr')
 
 
 # Фикстура: Запустить браузер
 @pytest.fixture(scope='function')
 def browser(request):
     # Запрос значения параметра
-    languages = request.config.getoption('languages')
+    languages = request.config.getoption('language')
 
     option = Options()
     option.add_experimental_option('prefs', {'intl.accept_languages': languages})
